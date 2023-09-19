@@ -1,18 +1,19 @@
 import Contact from "./Contact/Contact";
+import Footer from "./Footer/Footer";
 import Greeting from "./Greeting/Greeting";
 import Projects from "./Projects/Projects";
 import Skills from "./Skills/Skills";
-import TitleFooter from "./TitleFooter/TitleFooter";
+import Title from "./Title/Title";
 
 const Container = () => {
   return (
-    <div>
-      <TitleFooter />
+    <div className="w-280 ">
+      <Title />
       <Greeting />
       <Skills />
       <Projects />
       <Contact />
-      <TitleFooter />
+      <Footer />
     </div>
   );
 };
