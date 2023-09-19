@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "SpaceGrotesk-Bold";
+  src: local("SpaceGrotesk-Bold"),
+    url("src/fonts/SpaceGrotesk-Bold.ttf") format("opentype");
+  font-weight: bold;
+
+  font-family: "SpaceGrotesk-Medium";
+  src: local("SpaceGrotesk-Medium"),
+    url("src/fonts/SpaceGrotesk-Medium.ttf") format("opentype");
+  font-weight: medium;
+
+  font-family: "SpaceGrotesk-VariableFont_wght";
+  src: local("SpaceGrotesk-VariableFont_wght"),
+    url("src/fonts/SpaceGrotesk-VariableFont_wght") format("opentype");
+  font-weight: bold;
+}
