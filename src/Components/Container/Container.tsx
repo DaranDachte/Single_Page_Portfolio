@@ -7,7 +7,7 @@ import Title from "./Title/Title";
 
 const Container = () => {
   return (
-    <div className="w-280 ">
+    <div className="w-[100rem] h-full my-0 mx-auto border border-sky-500 ">
       <Title />
       <Greeting />
       <Skills />
