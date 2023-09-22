@@ -13,7 +13,9 @@ const Greeting = () => {
         </p>
       </div>
       <div>
-        <ContactButton />
+        <form action="#contact">
+          <button>Contact</button>
+        </form>
       </div>
     </div>
   );
