@@ -1,11 +1,11 @@
-import ContactButton from "../ContactButton/ContactButton";
-
 const Projects = () => {
   return (
     <>
       <div className="flex justify-between">
         <h2>Projects</h2>
-        <ContactButton />
+        <form action="#contact">
+          <button>Contact</button>
+        </form>
       </div>
       <div className="grid  gap-4 grid-cols-2 justify-items-center">
         <div>
