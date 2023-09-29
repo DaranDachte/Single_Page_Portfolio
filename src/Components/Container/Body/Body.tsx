@@ -1,5 +1,6 @@
 //import AppRouter from "../../AppRouter/AppRouter";
 import Navigation from "../../Navigation/Navigation";
+import { Outlet } from "react-router-dom";
 const Body = () => {
   return (
     <>
@@ -12,6 +13,7 @@ const Body = () => {
       </div>
       <div className="flex justify-between">
         <Navigation />
+        <Outlet />
       </div>
     </>
   );
