@@ -75,14 +75,14 @@ const Header = () => {
             className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
           />
           <img
-            src={Mui}
+            src={GitHub}
             alt="mui"
             className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
           />
           <img
-            src={GitHub}
+            src={myFoto}
             alt="css"
-            className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
+            className="w-[4rem] rounded transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
           />
         </div>
       </div>
@@ -99,9 +99,7 @@ const Header = () => {
           </form>
         </div>
 
-        <div className="w-[10rem]   ">
-          <img src={myFoto} alt="myFoto" className="rounded"></img>
-        </div>
+        <div className="w-[10rem]   "></div>
       </div>
     </>
   );
