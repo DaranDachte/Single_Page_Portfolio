@@ -18,14 +18,14 @@ const Header = () => {
       <div className="mt-4">
         <TitleFooter />
         <div className="grid gap-4 grid-cols-12 mt-6 ">
-          <div className="flex flex-col">
+          <div className="flex flex-col items-center group">
             <img
               src={Html}
               alt="html"
-              className=" w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
+              className=" w-[4rem] transition ease-in-out delay-150 group-hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
             />
-            <div className=" text-white opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-              <p>Text</p>
+            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
+              <p className="text-white">HTML 5</p>
             </div>
           </div>
 
@@ -89,17 +89,14 @@ const Header = () => {
 
       <div className=" flex align-center justify-between items-start w-440 h-[15rem] px-[1rem] ">
         <div>
-          <h2>Nice to meet you! I'm DaranDachte</h2>
-          <p>
+          <h2 className="text-sky-200 text-4xl mb-[1rem]">
+            Nice to meet you! I'm DaranDachte
+          </h2>
+          <p className="text-sky-200 text-3xl">
             Based in the West Germany, I'm a front-end developer passionate
             about building accessible web apps that users love.
           </p>
-          <form action="#contact">
-            <button>Contact</button>
-          </form>
         </div>
-
-        <div className="w-[10rem]   "></div>
       </div>
     </>
   );
