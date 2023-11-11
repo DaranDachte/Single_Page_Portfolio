@@ -25,65 +25,120 @@ const Header = () => {
               className=" w-[4rem] transition ease-in-out delay-150 group-hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
             />
             <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
-              <p className="text-white">HTML 5</p>
+              <p className="text-sky-200">HTML 5</p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center group">
+            <img
+              src={Css}
+              alt="css"
+              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300"
+            />
+            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
+              <p className="text-sky-200">CSS</p>
             </div>
           </div>
 
-          <img
-            src={Css}
-            alt="css"
-            className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300"
-          />
-          <img
-            src={Sass}
-            alt="Sass"
-            className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-          />
-          <img
-            src={Tailwind}
-            alt="tailwind"
-            className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-          />
-          <img
-            src={JavaScript}
-            alt="javaScript"
-            className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-          />
-          <img
-            src={TypeScript}
-            alt="TypeScript"
-            className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-          />
-          <img
-            src={React}
-            alt="react"
-            className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300  "
-          />
-          <img
-            src={Redux}
-            alt="css"
-            className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-          />
-          <img
-            src={MongoDB}
-            alt="mongoDB"
-            className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-          />
-          <img
-            src={NodeJS}
-            alt="nodeJS"
-            className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-          />
-          <img
-            src={GitHub}
-            alt="mui"
-            className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-          />
-          <img
-            src={myFoto}
-            alt="css"
-            className="w-[4rem] rounded transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-          />
+          <div className="flex flex-col items-center group">
+            <img
+              src={Sass}
+              alt="Sass"
+              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
+            />
+            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
+              <p className="text-sky-200">SCSS</p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center group">
+            <img
+              src={Tailwind}
+              alt="tailwind"
+              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
+            />
+            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
+              <p className="text-sky-200">TAILWIND</p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center group">
+            <img
+              src={JavaScript}
+              alt="javaScript"
+              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
+            />
+            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
+              <p className="text-sky-200">JavaScript</p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center group">
+            <img
+              src={TypeScript}
+              alt="TypeScript"
+              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
+            />
+            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
+              <p className="text-sky-200">TypeScript</p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center group">
+            <img
+              src={React}
+              alt="react"
+              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300  "
+            />
+            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
+              <p className="text-sky-200">REACT</p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center group">
+            <img
+              src={Redux}
+              alt="css"
+              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
+            />
+            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
+              <p className="text-sky-200">REDUX</p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center group">
+            <img
+              src={MongoDB}
+              alt="mongoDB"
+              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
+            />
+            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
+              <p className="text-sky-200">MongoDB</p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center group">
+            <img
+              src={NodeJS}
+              alt="nodeJS"
+              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
+            />
+            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
+              <p className="text-sky-200">Node.js</p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center group">
+            <img
+              src={GitHub}
+              alt="mui"
+              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
+            />
+            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
+              <p className="text-sky-200">GitHub</p>
+            </div>
+          </div>
+          <div className="flex flex-col items-center group">
+            <img
+              src={myFoto}
+              alt="css"
+              className="w-[4rem] rounded transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
+            />
+            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
+              <p className="text-sky-200">IT'S ME</p>
+            </div>
+          </div>
         </div>
       </div>
 
