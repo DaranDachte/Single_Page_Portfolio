@@ -3,7 +3,7 @@ import Container from "./Components/Container/Container";
 
 function App() {
   return (
-    <div>
+    <div className="bg-[#313a48]">
       <Container />
     </div>
   );

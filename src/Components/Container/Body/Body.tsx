@@ -81,7 +81,13 @@ const Body = () => {
         <h2 className="text-sky-200 text-[3rem] ml-[8rem]  ">
           Projects (hover for details)
         </h2>
-        <div className="text-sky-200 text-[1.5rem] mr-[8rem]">Contact Me</div>
+        <a
+          href="mailto:darandachte@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="text-sky-200 text-[1.5rem] mr-[8rem]">Contact Me</div>
+        </a>
       </div>
       <div className="grid   grid-cols-2 gap-4  ">
         {data.map((project) => (
