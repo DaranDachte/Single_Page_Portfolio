@@ -8,14 +8,13 @@ import React from "../../../assets/img/react.svg";
 import Redux from "../../../assets/img/redux.svg";
 import MongoDB from "../../../assets/img/mongo.svg";
 import NodeJS from "../../../assets/img/node.svg";
-import Mui from "../../../assets/img/mui.svg";
 import Tailwind from "../../../assets/img/tailwind.svg";
 import GitHub from "../../../assets/img/github.svg";
 import myFoto from "../../../assets/img/myFoto.jpg";
 const Header = () => {
   return (
     <>
-      <div className="mt-4">
+      <div>
         <TitleFooter />
         <div className="grid gap-4 grid-cols-12 mt-6 ">
           <div className="flex flex-col items-center group">
@@ -145,12 +144,13 @@ const Header = () => {
       <div className=" flex align-center justify-between items-start w-440 h-[15rem] px-[1rem] ">
         <div>
           <h2 className="text-sky-200 text-4xl mb-[1rem]">
-            Nice to meet you! I'm DaranDachte
+            Hello. My name is Daran Daсhte. I live in West Germany, in the
+            Düsseldorf area and do Web Development. On this landing page you can
+            see some of the works I've done since graduating from programming
+            school in early 2023. I am currently looking for a job as a Junior
+            Frontend Developer.
           </h2>
-          <p className="text-sky-200 text-3xl">
-            Based in the West Germany, I'm a front-end developer passionate
-            about building accessible web apps that users love.
-          </p>
+          <p className="text-sky-200 text-3xl"></p>
         </div>
       </div>
     </>

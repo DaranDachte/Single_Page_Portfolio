@@ -4,6 +4,8 @@ import ToDoListPreview from "../../assets/img/ToDoList/Preview.png";
 import BookLibraryPreview from "../../assets/img/BookLibraryApp/Preview.jpg";
 import TipCalculatorPreview from "../../assets/img/TipCalculator/Preview.jpg";
 import AdviceAppPreview from "../../assets/img/AdviceApp/Preview.png";
+import eCommerceAppPreview from "../../assets/img/eCommerce/Preview.jpg";
+import RainPreview from "../../assets/img/JustAnotherRain/Preview.jpg";
 
 import InvoiceAppHomePage from "../../assets/img/InvoiceApp/HomePage.jpg";
 import InvoiceAppDetails from "../../assets/img/InvoiceApp/Details.jpg";
@@ -31,6 +33,19 @@ import Splitter from "../../assets/img/TipCalculator/Splitter.jpg";
 import HomePageAdviceApp from "../../assets/img/AdviceApp/HomePage.png";
 import Advice1 from "../../assets/img/AdviceApp/Advice1.jpg";
 import Advice2 from "../../assets/img/AdviceApp/Advice2.jpg";
+
+import HomePageE from "../../assets/img/eCommerce/HomePage.jpg";
+import Search from "../../assets/img/eCommerce/Search.jpg";
+import Item from "../../assets/img/eCommerce/Item.jpg";
+import Basket from "../../assets/img/eCommerce/Basket.jpg";
+import Contact from "../../assets/img/eCommerce/Contact.jpg";
+
+import Clouds from "../../assets/img/JustAnotherRain/Clouds.jpg";
+import Title from "../../assets/img/JustAnotherRain/Title.jpg";
+import HomePageRain from "../../assets/img/JustAnotherRain/HomePage.jpg";
+import Gallery from "../../assets/img/JustAnotherRain/Gallery.jpg";
+import Gallery1 from "../../assets/img/JustAnotherRain/Gallery1.jpg";
+import TestAndNews from "../../assets/img/JustAnotherRain/TestAndNews.jpg";
 
 export const data = [
   {
@@ -109,5 +124,27 @@ export const data = [
     screenShots: [HomePageAdviceApp, Advice1, Advice2],
     projectLink: "https://advice-generator-lr8z.vercel.app",
     codeLink: "https://github.com/DaranDachte/Advice_generator",
+  },
+  {
+    id: 7,
+    imgSrc: eCommerceAppPreview,
+    description:
+      "Application simulating the work of a standard online shop, where you can search, select and put in the basket of your favourite product. This app is made using the  React library  Mantine.  ",
+    technologies: "JavaScript, Mantine, React",
+    name: "E-Commerce",
+    screenShots: [HomePageE, Search, Item, Basket, Contact],
+    projectLink: "https://main--timely-peony-f0a59f.netlify.app/",
+    codeLink: "https://github.com/DaranDachte/e-commerce",
+  },
+  {
+    id: 8,
+    imgSrc: RainPreview,
+    description:
+      "This is my graduation project. In it I tried to create a website to support refugees. The peculiarity of this project is that it combines elements of informational and visual assistance.  ",
+    technologies: "Javacript, React, More than 10 libraries",
+    name: "Just another Rain",
+    screenShots: [Clouds, Title, HomePageRain, Gallery, Gallery1, TestAndNews],
+    projectLink: "https://just-another-rain-client.onrender.com/",
+    codeLink: "https://github.com/DaranDachte/Just-another-Rain",
   },
 ];
