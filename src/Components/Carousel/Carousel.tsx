@@ -1,6 +1,10 @@
 import { useState, useRef, Key } from "react";
 
-const Carousel = ({ items }) => {
+interface CarouselTypes {
+  items: string[];
+}
+
+const Carousel: React.FC<CarouselTypes> = ({ items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const carousel = useRef(null);
 
