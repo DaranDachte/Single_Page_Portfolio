@@ -6,6 +6,8 @@ import TipCalculatorPreview from "../../assets/img/TipCalculator/Preview.jpg";
 import AdviceAppPreview from "../../assets/img/AdviceApp/Preview.png";
 import eCommerceAppPreview from "../../assets/img/eCommerce/Preview.jpg";
 import RainPreview from "../../assets/img/JustAnotherRain/Preview.jpg";
+import GitSearchPreview from "../../assets/img/GitSearchApp/Preview.jpg";
+import CountriesOfTheWorldPreview from "../../assets/img/CountriesOfTheWorld/Preview.jpg";
 
 import InvoiceAppHomePage from "../../assets/img/InvoiceApp/HomePage.jpg";
 import InvoiceAppDetails from "../../assets/img/InvoiceApp/Details.jpg";
@@ -47,6 +49,15 @@ import Gallery from "../../assets/img/JustAnotherRain/Gallery.jpg";
 import Gallery1 from "../../assets/img/JustAnotherRain/Gallery1.jpg";
 import TestAndNews from "../../assets/img/JustAnotherRain/TestAndNews.jpg";
 
+import DefaultDay from "../../assets/img/GitSearchApp/DefaultDay.jpg";
+import SearchNight from "../../assets/img/GitSearchApp/SearchNight.jpg";
+import NoResult from "../../assets/img/GitSearchApp/NoResults.jpg";
+
+import NightTheme from "../../assets/img/CountriesOfTheWorld/NightTheme.jpg";
+import LearnMore from "../../assets/img/CountriesOfTheWorld/LearnMore.jpg";
+import LearnMoreNight from "../../assets/img/CountriesOfTheWorld/LearnMoreNight.jpg";
+import NoMatches from "../../assets/img/CountriesOfTheWorld/NoMatches.jpg";
+
 export const data = [
   {
     id: 1,
@@ -86,23 +97,25 @@ export const data = [
     projectLink: "https://to-do-list-30cn495my-darandachte.vercel.app/",
     codeLink: "https://github.com/DaranDachte/ToDoList",
   },
+
   {
     id: 4,
-    imgSrc: BookLibraryPreview,
+    imgSrc: CountriesOfTheWorldPreview,
     description:
-      "This project is about learning the Redux state manager, and is taken from a course that was created by Bogdan Stashchuk. You can see the certificate of completion for this course in the screenshots section",
-    technologies: "TypeScript, Redux, CSS, React",
-    name: "Book Library",
+      "Using this app you can easily find the country you want, get the information you need about that country, and filter countries by region.  In this application I used Context API as well as Redux state manager. ",
+    technologies: "TypeScript, Context API, Redux, SCSS, React",
+    name: "Countries of The World",
     screenShots: [
-      HomePage,
-      HomePage1,
-      HomePageEmpty,
-      HomePageFull,
-      Certificate,
+      CountriesOfTheWorldPreview,
+      NightTheme,
+      LearnMore,
+      LearnMoreNight,
+      NoMatches,
     ],
-    projectLink: "",
-    codeLink: "https://github.com/DaranDachte/Book_Library_App-LearnRedux",
+    projectLink: "https://countries-of-the-world-fr5x.vercel.app/",
+    codeLink: "https://github.com/DaranDachte/Countries_of_the_World",
   },
+
   {
     id: 5,
     imgSrc: TipCalculatorPreview,
@@ -141,10 +154,38 @@ export const data = [
     imgSrc: RainPreview,
     description:
       "This is my graduation project. In it I tried to create a website to support refugees. The peculiarity of this project is that it combines elements of informational and visual assistance.  ",
-    technologies: "Javacript, React, More than 10 libraries",
+    technologies: "JavaScript, React, More than 10 libraries",
     name: "Just another Rain",
     screenShots: [Clouds, Title, HomePageRain, Gallery, Gallery1, TestAndNews],
     projectLink: "https://just-another-rain-client.onrender.com/",
     codeLink: "https://github.com/DaranDachte/Just-another-Rain",
+  },
+  {
+    id: 9,
+    imgSrc: GitSearchPreview,
+    description:
+      "Using this application you can quickly and easily find the right account on gitHub. You also get some personal data that the user has specified on their account. ",
+    technologies: "TypeScript, Context API, Styled components, React",
+    name: "gitHub user search app",
+    screenShots: [GitSearchPreview, DefaultDay, SearchNight, NoResult],
+    projectLink: "https://git-hub-user-search-app-orcin.vercel.app/",
+    codeLink: "https://github.com/DaranDachte/gitHub_user_search_app",
+  },
+  {
+    id: 10,
+    imgSrc: BookLibraryPreview,
+    description:
+      "This project is about learning the Redux state manager, and is taken from a course that was created by Bogdan Stashchuk. You can see the certificate of completion for this course in the screenshots section",
+    technologies: "TypeScript, Redux, CSS, React",
+    name: "Book Library",
+    screenShots: [
+      HomePage,
+      HomePage1,
+      HomePageEmpty,
+      HomePageFull,
+      Certificate,
+    ],
+    projectLink: "",
+    codeLink: "https://github.com/DaranDachte/Book_Library_App-LearnRedux",
   },
 ];
