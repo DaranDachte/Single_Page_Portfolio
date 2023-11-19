@@ -1,5 +1,11 @@
 import Carousel from "../Carousel/Carousel";
-const Modal = ({ closeModal, screenShots }) => {
+
+interface ModalTypes {
+  screenShots: string[];
+  closeModal: () => void;
+}
+
+const Modal: React.FC<ModalTypes> = ({ closeModal, screenShots }) => {
   return (
     <div className="w-screen h-screen z-50 bg-black bg-opacity-30 fixed top-0 right-0 flex justify-center items-center">
       <div className="bg-white p-10 rounded-md shadow-md max-w-7xl">
