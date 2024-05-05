@@ -1,80 +1,15 @@
 import { useState } from "react";
-import Modal from "../../Modal/Modal";
-
-import { data } from "../../data/data";
-
-interface ProjectBlockTypes {
-  imgSrc: string;
-  description: string;
-  technologies: string;
-  id: number;
-  name: string;
-  screenShots: string[];
-  projectLink: string;
-  codeLink: string;
-}
-
-const ProjectBlock: React.FC<ProjectBlockTypes> = ({
-  imgSrc,
-  description,
-  technologies,
-  id,
-  name,
-  screenShots,
-  projectLink,
-  codeLink,
-}) => {
-  const [openModal, setOpenModal] = useState(false);
-  function openModalFun() {
-    setOpenModal(true);
-  }
-  function closeModalFun() {
-    setOpenModal(false);
-  }
-
-  return (
-    <div className="w-[33.75rem] h-[25rem] group mx-auto my-[2.25rem]  rounded    ">
-      <div className="flex flex-col items-center justify-center absolute opacity-0 group-hover:bg-black/[.85] group-hover:opacity-100 transition-opacity delay-150 w-[33.75rem] h-[25rem]">
-        <div className="text-sky-200 p-[1rem] text-[1.25rem] ">
-          {description}
-        </div>
-        <div
-          onClick={openModalFun}
-          className="text-sky-200 p-[1rem] underline cursor-pointer decoration-solid"
-        >
-          View Screenshots
-        </div>
-        {openModal && (
-          <Modal screenShots={screenShots} closeModal={closeModalFun} />
-        )}
-
-        <div className="text-sky-200 p-[1rem] cursor-pointer underline decoration-solid">
-          <a href={projectLink} target="_blank" rel="noopener noreferrer">
-            View Project
-          </a>
-        </div>
-        <div className="text-sky-200 p-[1rem] underline cursor-pointer decoration-solid">
-          <a href={codeLink} target="_blank" rel="noopener noreferrer">
-            View Code
-          </a>
-        </div>
-      </div>
-      <img
-        className="h-full w-full rounded"
-        src={imgSrc}
-        alt={`Project ${id}`}
-      />
-      <div>
-        <p className="text-sky-200 text-[1.5rem]">{name}</p>
-      </div>
-      <div>
-        <p className="text-sky-200 font-medium">{technologies}</p>
-      </div>
-    </div>
-  );
-};
+import { ProjectBlock } from "../ProjectBlock/ProjectBlock";
+import { reactData } from "../../data/reactData";
+import { vueData } from "../../data/vueData";
+import { nuxtData } from "../../data/nuxtData";
 
 const Body = () => {
+  const reactTab = "reactTab";
+  const vueTab = "vueTab";
+  const nuxtTab = "nuxtTab";
+  const [activeTab, setActiveTab] = useState(reactTab);
+
   return (
     <>
       <div className="flex justify-between items-center">
@@ -89,10 +24,69 @@ const Body = () => {
           <div className="text-sky-200 text-[1.5rem] mr-[8rem]">Contact Me</div>
         </a>
       </div>
-      <div className="grid   grid-cols-2 gap-4  ">
-        {data.map((project) => (
-          <ProjectBlock key={project.id} {...project} />
-        ))}
+      <div>
+        <div className="flex flex-wrap text-sm font-medium text-center text-gray-500 border-none ml-[8rem]  ">
+          <button
+            onClick={() => {
+              setActiveTab(reactTab);
+            }}
+            className={`${
+              activeTab === reactTab ? "text-[4rem] " : ""
+            }inline-block p-4  bg-gray-100 rounded-lg cursor-pointer text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium  text-sm px-5 py-2.5 text-center me-2 mb-2`}
+            type="button"
+          >
+            React
+          </button>
+
+          <button
+            onClick={() => {
+              setActiveTab(vueTab);
+            }}
+            className={`${
+              activeTab === vueTab ? "text-[4rem] " : ""
+            }inline-block p-4  bg-gray-100 rounded-lg cursor-pointer text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium  text-sm px-5 py-2.5 text-center me-2 mb-2`}
+            type="button"
+          >
+            Vue
+          </button>
+          <button
+            onClick={() => {
+              setActiveTab(nuxtTab);
+            }}
+            className={`${
+              activeTab === nuxtTab ? "text-[4rem] " : ""
+            }inline-block p-4  bg-gray-100 rounded-lg cursor-pointer text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium  text-sm px-5 py-2.5 text-center me-2 mb-2`}
+            type="button"
+          >
+            Nuxt
+          </button>
+        </div>
+
+        <div>
+          {activeTab === reactTab && (
+            <div className="grid grid-cols-2 gap-4">
+              {reactData.map((project) => (
+                <ProjectBlock key={project.id} {...project} />
+              ))}
+            </div>
+          )}
+
+          {activeTab === vueTab && (
+            <div className="grid grid-cols-2 gap-4">
+              {vueData.map((project) => (
+                <ProjectBlock key={project.id} {...project} />
+              ))}
+            </div>
+          )}
+
+          {activeTab === nuxtTab && (
+            <div className="grid grid-cols-2 gap-4">
+              {nuxtData.map((project) => (
+                <ProjectBlock key={project.id} {...project} />
+              ))}
+            </div>
+          )}
+        </div>
       </div>
     </>
   );

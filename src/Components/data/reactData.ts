@@ -58,7 +58,7 @@ import LearnMore from "../../assets/img/CountriesOfTheWorld/LearnMore.jpg";
 import LearnMoreNight from "../../assets/img/CountriesOfTheWorld/LearnMoreNight.jpg";
 import NoMatches from "../../assets/img/CountriesOfTheWorld/NoMatches.jpg";
 
-export const data = [
+export const reactData = [
   {
     id: 1,
     imgSrc: InvoiceAppPreview,
