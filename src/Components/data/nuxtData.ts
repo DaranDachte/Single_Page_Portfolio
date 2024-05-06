@@ -24,7 +24,7 @@ export const nuxtData = [
     id: 1,
     imgSrc: C2,
     description:
-      "I developed this project with Nuxt3 framework, using Nuxt Ui and Nuxt Ui pro libraries. Since only the frontend is presented here, and there is no access to the backend, some functions are presented only as html elements (transition from one page to another, statistics page, selection in some inputs). Due to lack of Nuxt Pro license (249$) I can't make a deploy of this application. But you can see the code and appearance in this repository. ",
+      "I developed this project with Nuxt3 framework, using Nuxt Ui  libraries. Since only the frontend is presented here, some functions are presented only as html elements (transition from one page to another, statistics page, selection in some inputs). Due to lack of Nuxt Pro license (249$) I can't make a deploy of this application. But you can see the code and appearance in this repository. ",
     technologies: " Nuxt3, NuxtUI, TypeScript, Composition API, Tailwind",
     name: "ClassroomApp with NuxtUi",
     screenShots: [C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C11, C12, C13],
