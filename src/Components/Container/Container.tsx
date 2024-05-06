@@ -4,7 +4,7 @@ import Header from "./Header/Header";
 
 const Container = () => {
   return (
-    <div className="w-[100rem] h-full my-[5rem]  mx-auto shadow-[0px_-15px_50px_-12px] shadow-sky-200  bg-[#151515] ">
+    <div className="w-[120rem] h-full my-[5rem]  mx-auto shadow-[0px_-15px_50px_-12px] shadow-sky-200  bg-[#151515] ">
       <Header />
       <Body />
       <Footer />

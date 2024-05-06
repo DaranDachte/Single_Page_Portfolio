@@ -1,156 +1,53 @@
 import TitleFooter from "../TitleFooter/TitleFooter";
-import Html from "../../../assets/img/html.svg";
-import Css from "../../../assets/img/css.svg";
-import Sass from "../../../assets/img/sass.svg";
-import JavaScript from "../../../assets/img/javascript.svg";
-import TypeScript from "../../../assets/img/typescript.svg";
-import React from "../../../assets/img/react.svg";
-import Redux from "../../../assets/img/redux.svg";
-import MongoDB from "../../../assets/img/mongo.svg";
-import NodeJS from "../../../assets/img/node.svg";
-import Tailwind from "../../../assets/img/tailwind.svg";
-import GitHub from "../../../assets/img/github.svg";
-import myFoto from "../../../assets/img/myFoto.jpg";
+import { headerData } from "../../data/headerData";
+
 const Header = () => {
   return (
     <>
       <div>
         <TitleFooter />
-        <div className="grid gap-4 grid-cols-12 mt-6 ">
-          <div className="flex flex-col items-center group">
-            <img
-              src={Html}
-              alt="html"
-              className=" w-[4rem] transition ease-in-out delay-150 group-hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-            />
-            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
-              <p className="text-sky-200">HTML 5</p>
+        <div className="flex justify-between flex-wrap mt-6 w-100 mx-5">
+          {headerData.map((header) => (
+            <div
+              key={header.id}
+              className="flex items-center justify-center group"
+            >
+              <div className="flex flex-col items-center">
+                <img
+                  src={header.imgSrc}
+                  alt={header.alt}
+                  className="w-[4rem] rounded transition ease-in-out delay-150 group-hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5] hover:scale-110 duration-300"
+                />
+                <div className="opacity-0 group-hover:opacity-100 transition-opacity delay-150">
+                  <p className="text-sky-200">{header.text}</p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="flex flex-col items-center group">
-            <img
-              src={Css}
-              alt="css"
-              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300"
-            />
-            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
-              <p className="text-sky-200">CSS</p>
-            </div>
-          </div>
-
-          <div className="flex flex-col items-center group">
-            <img
-              src={Sass}
-              alt="Sass"
-              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-            />
-            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
-              <p className="text-sky-200">SCSS</p>
-            </div>
-          </div>
-          <div className="flex flex-col items-center group">
-            <img
-              src={Tailwind}
-              alt="tailwind"
-              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-            />
-            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
-              <p className="text-sky-200">TAILWIND</p>
-            </div>
-          </div>
-          <div className="flex flex-col items-center group">
-            <img
-              src={JavaScript}
-              alt="javaScript"
-              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-            />
-            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
-              <p className="text-sky-200">JavaScript</p>
-            </div>
-          </div>
-          <div className="flex flex-col items-center group">
-            <img
-              src={TypeScript}
-              alt="TypeScript"
-              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-            />
-            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
-              <p className="text-sky-200">TypeScript</p>
-            </div>
-          </div>
-          <div className="flex flex-col items-center group">
-            <img
-              src={React}
-              alt="react"
-              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300  "
-            />
-            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
-              <p className="text-sky-200">REACT</p>
-            </div>
-          </div>
-          <div className="flex flex-col items-center group">
-            <img
-              src={Redux}
-              alt="css"
-              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-            />
-            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
-              <p className="text-sky-200">REDUX</p>
-            </div>
-          </div>
-          <div className="flex flex-col items-center group">
-            <img
-              src={MongoDB}
-              alt="mongoDB"
-              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-            />
-            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
-              <p className="text-sky-200">MongoDB</p>
-            </div>
-          </div>
-          <div className="flex flex-col items-center group">
-            <img
-              src={NodeJS}
-              alt="nodeJS"
-              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-            />
-            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
-              <p className="text-sky-200">Node.js</p>
-            </div>
-          </div>
-          <div className="flex flex-col items-center group">
-            <img
-              src={GitHub}
-              alt="mui"
-              className="w-[4rem] transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-            />
-            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
-              <p className="text-sky-200">GitHub</p>
-            </div>
-          </div>
-          <div className="flex flex-col items-center group">
-            <img
-              src={myFoto}
-              alt="css"
-              className="w-[4rem] rounded transition ease-in-out delay-150 hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5]  hover:scale-110 duration-300 "
-            />
-            <div className=" opacity-0 group-hover:opacity-100 transition-opacity delay-150 flex items-center justify-center">
-              <p className="text-sky-200">IT'S ME</p>
-            </div>
-          </div>
+          ))}
         </div>
       </div>
 
-      <div className=" flex align-center justify-between items-start w-440 h-[15rem] px-[1rem] ">
+      <div className="flex align-center mt-5 justify-between items-start w-440 h-[15rem] px-[1rem]">
         <div>
-          <h2 className="text-sky-200 text-4xl mb-[1rem]">
-            Hello. My name is Daran Daсhte. I live in West Germany, in the
-            Düsseldorf area and do Web Development. On this landing page you can
-            see some of the works I've done since graduating from programming
-            school in early 2023. I am currently looking for a job as a Junior
-            Frontend Developer.
-          </h2>
-          <p className="text-sky-200 text-3xl"></p>
+          <p className="text-sky-200 text-2xl m-[1rem] leading-[3rem]">
+            Hi! My name is Emil Terekhin, in Web Development I am also known as
+            Daran Dachte. I live in West Germany, in the Düsseldorf area, but I
+            am ready to move to any region of Germany if the offer is
+            interesting.
+          </p>
+          <p className="text-sky-200 text-2xl m-[1rem] leading-[3rem]">
+            I am currently actively looking for a job as a Web Developer. On
+            this page you can see some of my projects created after graduating
+            from programming school in early 2023. After that, for a year, I did
+            personalized training with experienced developers with Senior WebDev
+            and Team Lead level. I also interned at a company where I greatly
+            improved my programming skills and teamwork principles.
+          </p>
+          <p className="text-sky-200 text-2xl m-[1rem] leading-[3rem]">
+            I am proficient in the following bundles of technologies:
+            React-Redux, Vue-Nuxt-Pinia. If you have any questions or
+            suggestions, feel free to get in touch.
+          </p>
         </div>
       </div>
     </>
