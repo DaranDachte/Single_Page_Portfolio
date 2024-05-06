@@ -12,8 +12,8 @@ const Body = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center mt-40">
-        <h2 className="text-sky-200 text-[3rem] ml-[8rem]  ">
+      <div className="flex justify-between items-center mt-40 mb-5">
+        <h2 className="text-sky-200 text-[1.5rem] ml-[8rem]  ">
           Projects (hover for details)
         </h2>
         <a
