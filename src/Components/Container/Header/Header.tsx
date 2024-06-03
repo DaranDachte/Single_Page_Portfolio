@@ -16,7 +16,7 @@ const Header = () => {
                 <img
                   src={header.imgSrc}
                   alt={header.alt}
-                  className="w-[4rem] rounded transition ease-in-out delay-150 group-hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5] hover:scale-110 duration-300"
+                  className="lg:w-[4rem] md:w-[3rem] sm:w-[2rem] rounded transition ease-in-out delay-150 group-hover:-translate-y-5 hover:scale-x-[1.5] hover:scale-y-[1.5] hover:scale-110 duration-300"
                 />
                 <div className="opacity-0 group-hover:opacity-100 transition-opacity delay-150">
                   <p className="text-sky-200">{header.text}</p>
@@ -27,15 +27,15 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="flex align-center mt-5 justify-between items-start w-440 h-[15rem] px-[1rem]">
+      <div className="flex align-center mt-5 justify-between items-start w-full md:w-440 h-[15rem] px-4 md:px-[1rem]">
         <div>
-          <p className="text-sky-200 text-2xl m-[1rem] leading-[3rem]">
+          <p className="text-sky-200 text-base md:text-xl m-4  lg:text-2xl leading-[2rem]">
             Hi! My name is Emil Terekhin, in Web Development I am also known as
             Daran Dachte. I live in West Germany, in the Düsseldorf area, but I
             am ready to move to any region of Germany if the offer is
             interesting.
           </p>
-          <p className="text-sky-200 text-2xl m-[1rem] leading-[3rem]">
+          <p className="text-sky-200 text-base md:text-xl lg:text-2xl m-4 leading-[2rem]">
             I am currently actively looking for a job as a Web Developer. On
             this page you can see some of my projects created after graduating
             from programming school in early 2023. After that, for a year, I did
@@ -43,7 +43,7 @@ const Header = () => {
             and Team Lead level. I also interned at a company where I greatly
             improved my programming skills and teamwork principles.
           </p>
-          <p className="text-sky-200 text-2xl m-[1rem] leading-[3rem]">
+          <p className="text-sky-200 text-base md:text-xl lg:text-2xl m-4 leading-[2rem]">
             I am proficient in the following bundles of technologies:
             React-Redux, Vue-Nuxt-Pinia. If you have any questions or
             suggestions, feel free to get in touch.
