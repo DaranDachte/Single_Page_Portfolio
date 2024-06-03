@@ -12,8 +12,8 @@ const Body = () => {
 
   return (
     <>
-      <div className="flex justify-between items-center mt-40 mb-5">
-        <h2 className="text-sky-200 text-[1.5rem] ml-[8rem]  ">
+      <div className="flex flex-col md:flex-row justify-between items-center sm:mt-60  md:mt-40   lg:mt-40 mb-8 md:mb-12 px-4 md:px-0">
+        <h2 className="text-sky-200 text-lg md:text-xl lg:text-2xl mb-4  md:mb-0 md:ml-[8rem]">
           Projects (hover for details)
         </h2>
         <a
@@ -21,11 +21,14 @@ const Body = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="text-sky-200 text-[1.5rem] mr-[8rem]">Contact Me</div>
+          <div className="text-sky-200 text-lg md:text-xl lg:text-2xl md:mr-[8rem]">
+            Contact Me
+          </div>
         </a>
       </div>
+
       <div>
-        <div className="flex flex-wrap text-sm font-medium text-center text-gray-500 border-none ml-[8rem]  ">
+        <div className="flex flex-wrap text-sm sm:text-base md:text-lg lg:mx-25 lg:text-xl font-medium text-center text-gray-500 border-none ml-4 sm:mx-[8rem] sm:ml-[8rem]  ">
           <button
             onClick={() => {
               setActiveTab(reactTab);
